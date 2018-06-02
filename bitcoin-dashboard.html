@@ -1,0 +1,297 @@
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0"/>
+
+		<title>Design Mockup</title>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/colors.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	</head>
+
+	<body>
+		<main>
+			<header>
+				<div class="main-heading">
+					ONYX
+				</div>
+
+				<nav id="main-navigation" class="m-nav">
+					<li class="active"><a href="">HOME</a></li>
+					<li><a href="">FUTURE MARKET</a></li>
+					<li><a href="">MY ACCOUNT</a></li>
+					<li><a href="">TUTORIAL</a></li>
+				</nav>
+
+				<div id="avatar-box">
+					ONYX USER
+					<span class="avatar">A</span>
+				</div>
+			</header>
+
+			<main id="content">
+				<aside>
+					<div class="panel">
+						<div class="p-body" style="padding: 15px">
+							<div class="form-group">
+								<div class="s-box">Market</div>
+								<div class="s-box">Limit</div>
+								<div class="s-box dropdown">Stop Market</div>
+							</div>
+
+							<div class="form-group">
+								<div class="input-grp">
+									<span class="tag">Price</span>
+									<input type="text">
+									<span class="tag">USD</span>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="input-grp">
+									<span class="tag">Limit Price</span>
+									<input type="text">
+									<span class="tag">USD</span>
+								</div>
+							</div>
+
+							<div class="form-group text-center row">
+								<span class="pull-left" style="width:50%">
+									<button class="btn btn-blue">BUY/LONG</button>
+									<div class="muted small">Cost: 0.00XBT</div>
+								</span>
+								<span class="pull-left" style="width: 50%">
+									<button class="btn btn-pink">SELL/SHORT</button>
+									<div class="muted small">Cost: 0.00XBT</div>
+								</span>
+							</div>
+							<hr align="center">
+							<div>
+							</div>
+							<table cellspacing="0" class="no-border split">
+								<tr><td>Order Value</td> <td>0.00XBT</td></tr>
+								<tr><td>Available Balance</td> <td>0.0999XBT</td></tr>
+								<tr style="background-color: #224">
+									<td class="">Post-Only</td>
+									<td class="">Post-Only</td>
+								</tr>
+							</table>
+						</div>
+						<br>
+						<div style="padding: 15px 0" class="b-darkblue form-group">
+							<div class="p-heading">
+								YOUR POSITION: XBTUSD
+							</div>
+							<div class="p-body">
+								<div class="spectrum">
+									<small class="small">25.00X</small>&nbsp; <span class="leverage">LEVERAGE</span>
+								</div>
+								<table class="split no-border">
+									<tr>
+										<td>Risk Limit</td>
+										<td>0.00/200XBT</td>
+									</tr>
+								</table>
+								<div class="form-group"></div>
+								<div class="input-grp">
+									<input type="text" value="50.00">
+									<button class="btn-circle btn-blue"></button>
+									<button class="btn-circle btn-pink"></button>
+								</div>
+							</div>
+						</div>
+						<div class="p-heading">
+							CONTRACT DETAIL: XBTUSD
+						</div>
+						<table class="p-body  no-border split">
+							<tr><td>Pricing Source</td> <td class="t-blue">Onyx Index</td></tr>
+							<tr><td>Onyx Index price </td> <td class="t-blue">11806.3</td></tr>
+						</table>
+					</div>
+				</aside>
+
+				<section class="main-container">
+					<header>
+						<div class="s-box dropdown">
+							<span class="icon">B</span>
+							BTC/USD</div>
+						<div class="s-box">Pertpetual Swap(100x) <span class="t-green">$1183.75^</span></div>
+						<div class="s-box">Mar 31(100x) <span class="t-green">$1225.00^</span></div>
+						<div class="s-box pull-right">XBT Guide</div>
+					</header>
+					<section class="small">
+
+						<article id="order" class="panel">
+							<div class="p-heading"><div class="p-title">ORDER BOOK(XBTUSD)</div></div>
+							<table cellspacing="0" class="small striped text-center">
+								<tr>
+									<th>Price</th>
+									<th>Size</th>
+									<th width="40%" style="text-align: right">Total</th>
+								</tr>
+								<tr>
+									<td class="t-red">1184.30</td>
+									<td class="">15</td>
+									<td class=""><span class="progress b-red"></span> 1828</td>
+								</tr>
+								<tr>
+									<td class="t-red">1184.30</td>
+									<td class="">15</td>
+									<td class=""><span class="progress b-red"></span> 1828</td>
+								</tr>
+
+								<tr class="text-center">
+									<td  id="shoulder" colspan="3">
+										<span id="larger" class="t-green">1183.75 ^</span>
+										<span class="muted">1185.75/1186.95 <span class="loader"></span></span>
+									</td>
+								</tr>
+
+								<tr>
+									<td class="t-green">1184.30</td>
+									<td class="">15</td>
+									<td><span class="b-green progress"></span> 1828</td>
+								</tr>
+							</table>
+						</article>
+
+						<article id="trade" class="panel">
+							<div class="p-heading"><div class="p-title">RECENT TRADES(XBTUSD)</div></div>
+							<table cellspacing="0" class="small striped text-center">
+								<tr>
+									<td class="t-red">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-red">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-red">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-red">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-green">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-green">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-red">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-red">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+								<tr>
+									<td class="t-green">11,304.30</td>
+									<td class="">0.000003049</td>
+									<td class="">04:39:30</td>
+								</tr>
+							</table>
+						</article>
+
+						<article id="graph" class="panel">
+							<div class="p-heading"><div class="p-title">
+								<span class="s-box dropdown active">30m</span>
+								<span class="s-box dropdown">Hour</span>
+								<span class="s-box dropdown">1D</span>
+								<span class="s-box dropdown">1W</span>
+								<div class="pull-right">
+									<span class="s-box active" style="position: relative;z-index: 2">Graph</span>
+									<span class="s-box" style="left: -20px">&nbsp;&nbsp; Depth</span>
+								</div>
+							</div></div>
+							<div class="p-body">CONTENT 3</div>
+						</article>
+					</section>
+					<section id="footer">
+						<div class="panel">
+							<nav class="m-nav m-tabs">
+								<li class=""><a href="#">Positions</a></li>
+								<li class=""><a href="#">Closed Position</a></li>
+								<li class="active"><a href="#">Active Orders (1)</a></li>
+								<li class=""><a href="#">Stops (0)</a></li>
+								<li class=""><a href="#">Fills</a></li>
+								<li class=""><a href="#">Order History</a></li>
+							</nav>
+							<br>
+							<table cellspacing="0" class="small no-border text-center striped">
+								<thead>
+									<th>Symbol</th>
+									<th>Qty</th>
+									<th>Price</th>
+									<th>Filled</th>
+									<th>Remaining</th>
+									<th>Order Value</th>
+									<th>Fill Price</th>
+									<th>Type</th>
+									<th>Status</th>
+									<th>Time</th>
+									<th></th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>XBTUSD</td>
+										<td>1</td>
+										<td>11739.00</td>
+										<td>--</td>
+										<td>1</td>
+										<td>0.000XBT</td>
+										<td>--</td>
+										<td>Limit</td>
+										<td>New</td>
+										<td>6:18:16</td>
+										<td><button class="btn t-red" ghost>CANCEL</button></td>
+									</tr>
+									<tr>
+										<td>XBTUSD</td>
+										<td>1</td>
+										<td>11739.00</td>
+										<td>--</td>
+										<td>1</td>
+										<td>0.000XBT</td>
+										<td>--</td>
+										<td>Limit</td>
+										<td>New</td>
+										<td>6:18:16</td>
+										<td><button class="btn t-red" ghost>CANCEL</button></td>
+									</tr>
+									<tr>
+										<td>XBTUSD</td>
+										<td>1</td>
+										<td>11739.00</td>
+										<td>--</td>
+										<td>1</td>
+										<td>0.000XBT</td>
+										<td>--</td>
+										<td>Limit</td>
+										<td>New</td>
+										<td>6:18:16</td>
+										<td><button class="btn t-red" ghost>CANCEL</button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
+				</section>
+			</main>
+		</main>
+	</body>
+</html>

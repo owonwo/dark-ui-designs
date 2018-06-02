@@ -1,0 +1,252 @@
+:root {
+    --light-shade: #545569;
+    --dark-shade: #292935;
+    --p-light-shade: #414251;
+    --p-dark-shade: #2e2e3a;
+    --letter-spacing: 3px;
+    --warm: #ff4f8a;
+    --gray: #4e505f;
+    --light-gray: #727485;
+    --pink: #8c2e62;
+    --blue: #43bdff;
+    --purple: #bf85ff;
+    --warm2: #fe7585;
+}
+
+.t-pink {
+    color: var(--pink);
+}
+.t-blue {
+    color: var(--blue);
+}
+.t-purple {
+    color: var(--purple);
+}
+
+.panel .heading,
+.panel .body {
+    padding: 0 15px;
+}
+
+.panel > .heading {
+    color: var(--light-gray);
+    padding-top: 15px;
+}
+
+.panel .body {
+    padding-top: 15px;
+}
+.panel .title {
+    letter-spacing: var(--letter-spacing);
+}
+
+body {
+    color: white;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin: 0; padding: 30px;
+    font-family: 'Montserrat','Noto sans', 'Segoe UI', 'Tahoma', 'Ubuntu', 'Helvetica', 'Arial',sans-serif;
+    background: linear-gradient(160deg, var(--light-shade) 20%, var(--dark-shade) 80%, var(--dark-shade) 100%) no-repeat 0 0 / cover;
+}
+
+.muted {
+    color: var(--light-gray);
+}
+div, section, main, aside {
+    box-sizing: border-box;
+}
+
+body > main {
+    display: grid;
+    margin: 0 auto;
+    grid: "aside section" auto / .3fr .7fr;
+    grid-gap: 15px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+aside nav {
+    flex-basis: 70%;
+}
+
+
+aside + section {
+    display: grid;
+    grid:
+        "topic topic" 300px
+        "stats graph" 300px
+        / .5fr .5fr;
+    grid-gap: 15px;
+}
+
+#daily-info, #graph-box, #stats {
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(120deg, var(--p-light-shade), var(--p-dark-shade));
+}
+
+#daily-info {
+    grid-area: topic;
+}
+
+#graph-box {
+    background-color: yellow !important;
+}
+
+aside .profile {
+    margin-bottom: 50px;
+}
+
+aside .profile * {
+    vertical-align: top;
+    display: inline-block;
+}
+
+aside .profile .avatar {
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 4px;
+}
+
+aside .profile .avatar + span {
+    line-height: 50px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing);
+
+}
+
+aside > nav {
+    padding: 0 10px;
+    font-size: .9em;
+}
+
+aside li {
+    display: block;
+    text-transform: uppercase;
+}
+
+nav li {
+    color: var(--light-gray);
+    letter-spacing: var(--letter-spacing);
+    line-height: 40px;
+}
+
+nav li.active {
+    color: white;
+}
+
+.bubbles {
+    display: inline-block;
+}
+
+.bubbles > span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 2.5px;
+    border-radius: 50%;
+    background: var(--light-gray);
+}
+
+.bubbles span.warm {
+    background-color: var(--warm);
+}
+
+
+.graph {
+    margin-top: 36px;
+    display: flex;
+    height: calc(300px - 70px);
+}
+
+.bar {
+    display: flex;
+    width: 80px;
+    margin-right: 2px;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.bar .bar-top {
+    padding: 5px 5px;
+}
+
+.bar .bar-top span:first-child {
+    font-size: large;
+}
+.bar .bar-top span:last-child {
+    font-size: smaller;
+    color: var(--light-gray);
+}
+
+.bar.current .bar-top {
+    background: white;
+    color: var(--gray);
+}
+
+.bar.current .bar-top span {
+    color: var(--warm);
+}
+.bar.current .bar {
+    background: linear-gradient(-32deg, var(--pink), var(--warm2));
+}
+
+.bar .bar {
+    flex-basis: 0%;
+    transition: flex-basis .3s ease-out 1s;
+    background-color: var(--gray);
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+.mt-0 {
+    margin-top: 0;
+}
+
+
+.chart-box > *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chart-box .chart {
+    border: solid 3px var(--gray);
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 15px;
+    height: 30px;
+    transform: rotate(-45deg);
+}
+
+.chart.blue {
+    border-color: transparent var(--blue)  var(--blue)  var(--blue);
+}
+
+.chart.purple {
+    border-color: transparent var(--purple)  var(--purple)   transparent ;
+}
+
+.chart.pink {
+    border-color: transparent var(--pink) transparent transparent ;
+}

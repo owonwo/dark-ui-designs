@@ -1,0 +1,52 @@
+:root {
+	--hr-color1:  #222b33;
+	--bg-color: #002;
+	--primary-color: orchid;
+	--dark-blue:#242b46;
+	--dark-blue-light: rgba(7, 20, 31, 0.39) ;
+	--blue: dodgerblue;
+	--red: crimson;
+	--yellow: gold;
+	--green: lightgreen;
+	--panel-color: #0c162a;
+	--pink-gradient: linear-gradient(45deg, indianred, crimson);
+	--blue-gradient: linear-gradient(45deg, dodgerblue, blue);
+	--crimson-gradient: linear-gradient(90deg, crimson, limegreen);
+}
+
+/*  colors    */
+.t-green {
+	color: lightgreen;
+}
+.t-blue {
+	color: dodgerblue;
+}
+.t-red {
+	color: crimson;
+}
+.t-yellow {
+	color: gold;
+}
+/*  end colors*/
+
+/*  background-colors */
+.b-darkblue {
+	background: var(--dark-blue-light, cadetblue);
+}
+
+.b-green {
+	background: var(--green, dodgerblue);
+}
+
+.b-blue {
+	background: var(--blue, dodgerblue);
+}
+
+.b-red {
+	background: var(--red, crimson);
+}
+
+.b-yellow {
+	background: var(--yellow, gold);
+}
+/*  end background-colors*/
