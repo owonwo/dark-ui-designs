@@ -42,6 +42,6 @@ const buildTheChart = (e) => {
     createBars(graph);
 }
 
-//wait for the web page to be completely loaded
+// wait for the web page to be completely loaded
 //before calling the buildTheChart function
 window.addEventListener('load', buildTheChart);
